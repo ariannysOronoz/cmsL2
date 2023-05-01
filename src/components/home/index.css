@@ -1,0 +1,162 @@
+.home{
+    margin-left:130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1330px;
+    height: 700px;
+}
+
+
+/*------Player----------*/
+.player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;;
+    width: 1200px;
+}
+.player-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.gameAndLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 1200px;
+}
+.gameAndLogin h1 {
+    display: flex;
+    justify-content: center;
+}
+.player-btns{
+    width: 150px;
+    height: 50px;
+    border-radius: 12px
+}
+
+.player-btns:hover {
+    background-color: pink;
+    color: white;
+}
+
+.-title{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+/*------gameAndLogin----------*/
+.gameAndLogin{
+    display: flex;
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.-btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 2px;    
+}
+.-btn:hover {
+    background-color: pink;
+    color: white;
+}
+
+
+/*------server----------*/
+.server{
+    display: flex;
+    flex-direction: row;
+    width: 1400px;
+    height: 300px;
+}
+.login{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 60px;
+    width: 700px;
+    height: 200px;
+    
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 700px;
+    height: 200px;
+}
+
+.btnServer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btnGame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.titleLogin{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.titleGame {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+.titleServer{
+    display: flex;
+    justify-content: center;
+    font-size: 13   px;
+}
+.bnt1 .btn2{
+    display: flex;
+    justify-content: center;
+}
+.boxServer{
+    display: flex;
+    flex-direction: column;
+}
+.loginServer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.loginServer{
+    display: flex;
+    width: 400px;
+    height: 500px;
+}
+
+.gameSever{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100px;
+}
+
+.loginServer{
+    display: flex;
+    flex-direction: row;
+}
+.loginName{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
