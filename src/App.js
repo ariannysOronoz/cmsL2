@@ -1,14 +1,13 @@
+import React from "react";
 import Menu from './components/menu/Menu';
-import Home from './components/home/Home';
-import Chat from './components/chat/Chat';
+import Page from "./components/page/Page";
 
 
 function App() {
   return (
     <div className="App">
       <Menu/>
-      <Home/>
-      <Chat/>
+      <Page/>
     </div>
   );
 }
