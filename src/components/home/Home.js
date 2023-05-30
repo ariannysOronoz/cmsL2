@@ -1,31 +1,38 @@
 import React from "react";
+import Player from "./player/Player";
 import './index.css';
 
 export default function Home() {
+    
+    const playerInf = [
+        {
+            title:"Players online",
+            namebtn:'123',
+        },
+        {
+            title:"Total players",
+            namebtn:'132',
+        },
+        {
+            title:"Total Accounts",
+            namebtn:'222',
+        },
+    ];
     //adicionando comentario para test
     return (
-        <div className="home">
-          <h1>Home</h1>
-            <div className="player">
-                <div className="online">
-                    <div className="online-title"><h1>Players Online </h1></div>
-                    <div className="player-btn -01">
-                        <button className="online player-btns">000</button>
-                    </div>
-                </div>
-                <div className="total">
-                    <div className="total-title"><h1>Total Players</h1></div>
-                    <div className="player-btn -02">
-                        <button className="total player-btns">000</button>
-                    </div>
-                </div>
-                <div className="account">
-                    <div className="account-title"><h1>Total Accounts </h1></div>
-                    <div className="player-btn -03">
-                        <button className="accounts player-btns">000</button>
-                    </div>
-                </div>   
-            </div>
+        <div>
+            <h1>Home</h1>
+            {
+                playerInf.map( 
+                    player =>
+                    (
+                        <Player
+                        title ={player.title} 
+                        namebtn={player.namebtn}
+                        />
+                    )
+                )
+            }
             <div className="gameAndLogin">
                 <div className="sectiongame">
                 <div className="titleLogin"><h1>Game and login Server</h1></div>

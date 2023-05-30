@@ -1,11 +1,12 @@
 import {useState} from "react";
-import { Link } from 'react-router-dom';
 import MenuItem from "./menuItem/MenuItem";
+import Page from "../page/Page";
 import './index.css';
 
 export default function Menu() {
     
     const [show, setShow] = useState(false);
+
     const menuInf = 
     [
       {
@@ -15,7 +16,7 @@ export default function Menu() {
       },
       {
         image:"fa-sharp fa-solid fa-comments",
-        name:'chat',
+        name:'Chat',
         link:'chat',
       },
       {
@@ -46,33 +47,38 @@ export default function Menu() {
     ];
 
     return (
-      
-      <main>
-        <aside className={`sidebar ${show ? 'show' : null}`}>
-          <nav className='nav'>
-            <div>
-              <div className='header-toggle' onClick={() => setShow(!show)}>
-                <Link className='nav-logo'>
-                  <i className={`fas fa-bars nav-logo-icon`}></i>
-                  <span className='nav-logo-name'>MENU</span>
-                </Link>
-              </div>
-                {
-                  menuInf.map( 
-                    menu =>
-                    ( 
-                      <MenuItem
-                          image={menu.image}
-                          name={menu.name}
-                          link={menu.link}
-                      />
-                    )
-                  )
-                }
+      <div className="pagina">
+
+        <div className= "header " onClick={() => setShow(!show)}>
+            <i className="fas fa-bars nav-logo-icon"></i>
+            <h3>CMSL2</h3>  
+        </div>
+        
+        <div className="contenidoPagina">
+            <div className={`sidebar ${show ? 'show' : null}`}>
+              <nav className='nav'>
+                <div>
+                  {
+                      menuInf.map( 
+                        menu =>
+                        (
+                          <MenuItem className={`hola ${show ? 'show' : null}`} 
+                              image ={menu.image} 
+                              name={menu.name}
+                              link={menu.link}
+                          />
+                        )
+                      )
+                    }
+                </div>
+              </nav>
             </div>
-          </nav>
-        </aside>
-      </main>
+
+            <div className="abrir">
+              <Page/>
+            </div>
+        </div>
+      </div>
     );
   };
   
