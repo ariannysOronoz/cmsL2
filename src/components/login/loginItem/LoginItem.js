@@ -9,7 +9,7 @@ export default function LoginItem(
         valueMax,
         update,
     }
-  )
+)
 {
     return (
         <div className='loginValue'>
